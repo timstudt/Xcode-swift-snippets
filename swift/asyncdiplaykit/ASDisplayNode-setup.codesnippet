@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-asdisplaynode-lifecycle</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //MARK: - vars
+
+    //MARK: - subnodes
+
+    //MARK: - constants
+    fileprivate struct localConstants {
+        static let insets = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+    }
+    
+    //MARK: - init
+    override init() {
+        super.init()
+        initialSetup()
+    }
+    
+    //MARK: - ASDisplayNode override
+    override func didLoad() {
+        super.didLoad()
+        setupView()
+    }
+ 
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -&gt; ASLayoutSpec {
+        return ASInsetLayoutSpec(insets: localConstants.insets, child: &lt;#node#&gt;)
+     }
+    
+    //MARK: - private methods
+    private func initialSetup() {
+         automaticallyManagesSubnodes = true
+    }
+    
+    private func setupView() {
+        //backgroundColor = UIColor.white
+    }
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A6DF07C7-B8BA-427E-AA74-F111DB71AC91</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ASDisplayNode setup</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

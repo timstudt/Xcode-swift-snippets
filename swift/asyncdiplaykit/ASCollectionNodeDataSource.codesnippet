@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>        guard postIndex &lt; posts.count else {
+            return ASCellNode()
+        }
+        guard postIndex &lt; posts.count else {
+            return ASCellNode()
+        }
+swift-ascollectionnode-datasource</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //MARK: - ASCollectionDataSource
+    func numberOfSections(in collectionNode: ASCollectionNode) -&gt; Int {
+        return &lt;#sections#&gt;
+    }
+    
+    func collectionNode(_ collectionNode: ASCollectionNode, numberOfItemsInSection section: Int) -&gt; Int {
+        return &lt;#rows#&gt;
+    }
+    
+    func collectionNode(_ collectionNode: ASCollectionNode, nodeForItemAt indexPath: IndexPath) -&gt; ASCellNode {
+        guard indexPath.row &lt; &lt;#data#&gt;.count else {
+            return ASCellNode()
+        }
+        let item = &lt;#data#&gt;[indexPath.row]
+        return ASCellNode()
+    }
+    </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>91D4FDB6-40E8-4835-87D0-165B447CC52D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ASCollectionNodeDataSource</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
